@@ -1,0 +1,31 @@
+.todoList {
+  width: 700px;
+}
+
+.todoListItem {
+  overflow: hidden;
+  height: 100px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.todoListItemResolved {
+  overflow: hidden;
+  height: 100px;
+  border-radius: 10px;
+  background: green;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  transition: transform 250ms;
+}
+
+.btn:hover {
+  transform: scale(1.5);
+}
