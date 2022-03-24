@@ -3,6 +3,7 @@ import { mutateUpdateTodo } from '@client/collections/Todos/updateTodo'
 import { ModalContext } from '@contexts/ModalContext'
 import { TodoFormModel } from '@models/FormModels/TodoFormModel'
 import { UpdateTodoModalAcceptProps, UpdateTodoModalProps } from './interface'
+import * as yup from 'yup'
 
 const withUpdateTodoModal = (Component: React.FC<UpdateTodoModalProps>) => {
   function Hoc(data: UpdateTodoModalAcceptProps) {
@@ -19,6 +20,7 @@ const withUpdateTodoModal = (Component: React.FC<UpdateTodoModalProps>) => {
       secondaryText: currTodo?.secondaryText,
       status: currTodo?.status,
     }
+
     const updateTodo = (formData: TodoFormModel) => {
       mutateUpdateTodo(formData, currentTodoId)
       setIsOpenUpdateModal(false)

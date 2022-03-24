@@ -1,11 +1,11 @@
+import styles from './UpdateTodoModal.module.css'
 import InputField from '@components/Form/InputField/InputField'
 import PrimaryButton from '@components/PrimaryButton'
 import { Dialog, DialogTitle } from '@mui/material'
 import { Form, Formik } from 'formik'
-import { UpdateTodoModalProps } from './interface'
-import { UpdateTodoValidationSchema } from './validationSchema'
-import { withUpdateTodoModal } from './withUpdateTodoModal'
-import styles from './UpdateTodoModal.module.css'
+import { UpdateTodoModalProps } from '@features/Todo/components/Modals/components/UpdateTodoModal/interface'
+import { withUpdateTodoModal } from '@features/Todo/components/Modals/components/UpdateTodoModal/withUpdateTodoModal'
+import UpdateTodoValidationSchema from './validationSchema'
 
 function UpdateTodoModal({
   isOpenUpdateModal,
