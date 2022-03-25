@@ -6,5 +6,5 @@ export interface TodoProps {
   status: boolean
   setIsOpenUpdateModal: React.Dispatch<React.SetStateAction<boolean>>
   isOpenUpdateModal: boolean
-  handleUpdateModal: any
+  handleUpdateModal: (string, boolean) => void
 }
