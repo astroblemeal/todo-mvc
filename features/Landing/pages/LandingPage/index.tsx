@@ -1,8 +1,7 @@
 import PrimaryButton from '@components/PrimaryButton'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import React, { Fragment, useEffect } from 'react'
-import AnimatedText from 'react-animated-text-content'
+import React, { Fragment } from 'react'
 import styles from './Landing.module.css'
 import { Typography } from '@mui/material'
 
@@ -21,6 +20,8 @@ function LandingPage() {
           Welcome to the TODO MVC Experience!
         </Typography>
         <PrimaryButton
+          type="button"
+          isDisabled={false}
           color="inherit"
           title="Enter site"
           variant="outlined"
