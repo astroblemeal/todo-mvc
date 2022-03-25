@@ -2,9 +2,9 @@ import { Button } from '@mui/material'
 import React from 'react'
 
 interface ButtonProps {
-  onClick: () => void
+  onClick?: () => void
   isDisabled: boolean
-  type: 'submit' | 'button'
+  type?: 'submit' | 'button'
   color?:
     | 'inherit'
     | 'primary'
