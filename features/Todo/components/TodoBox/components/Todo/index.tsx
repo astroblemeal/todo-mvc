@@ -6,7 +6,7 @@ import { withTodo } from '@features/Todo/components/TodoBox/components/Todo/with
 import CheckMark from '@components/Icons/CheckMark'
 import RoundIconButton from '@components/RoundIconButton/RoundIconButton'
 import XIcon from '@components/Icons/XIcon'
-import { TodoProps } from './interface'
+import { TodoProps } from '@features/Todo/components/TodoBox/components/Todo/interface'
 
 function Todo({
   handleCrud,

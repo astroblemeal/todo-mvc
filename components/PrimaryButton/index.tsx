@@ -1,6 +1,22 @@
 import { Button } from '@mui/material'
 import React from 'react'
 
+interface ButtonProps {
+  onClick: () => void
+  isDisabled: boolean
+  type: 'submit' | 'button'
+  color?:
+    | 'inherit'
+    | 'primary'
+    | 'secondary'
+    | 'success'
+    | 'error'
+    | 'info'
+    | 'warning'
+  variant: 'text' | 'outlined' | 'contained'
+  title: string
+}
+
 function PrimaryButton({
   onClick,
   isDisabled,
@@ -8,7 +24,7 @@ function PrimaryButton({
   color,
   variant,
   title,
-}: any) {
+}: ButtonProps) {
   return (
     <Button
       onClick={onClick}
